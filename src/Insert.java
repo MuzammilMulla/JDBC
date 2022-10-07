@@ -1,5 +1,4 @@
 import java.sql.*;
-
 public class Insert {
     public static void main(String[] args) {
 
@@ -17,8 +16,7 @@ public class Insert {
             Statement stmt = con.createStatement();
             stmt.executeUpdate(q);
             System.out.println("table created ....");
-
-
+            
             con.close();
         }
         catch (Exception e){
